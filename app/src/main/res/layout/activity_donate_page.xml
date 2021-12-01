@@ -23,8 +23,29 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/locationForReceiving"
+                android:id="@+id/nameOfInstitutionID"
                 android:layout_below="@id/donateImageID"
+                android:text="Name of Institution/Volunteer"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/tenaliramakrishna_regular"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#718355"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="38dp"
+                android:id="@+id/nameOfInstitutionInput"
+                android:layout_below="@id/nameOfInstitutionID"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/profile_background"
+                android:inputType="text"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationForReceiving"
+                android:layout_below="@id/nameOfInstitutionInput"
                 android:text="Enter Location for Receiving"
                 android:textStyle="bold"
                 android:layout_marginTop="30dp"
@@ -120,6 +141,7 @@
                 android:layout_marginTop="35dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginBottom="25dp"
                 android:background="@drawable/selected_background"
                 android:elevation="10dp" />
         </RelativeLayout>

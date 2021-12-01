@@ -71,7 +71,7 @@ public class VolunteerLoginAndSignUp extends AppCompatActivity {
                 EditText passID = (EditText) findViewById(R.id.passInputID);
                 String email = emailID.getText().toString();
                 String pass = passID.getText().toString();
-                if(email.equals("yash@1234") && pass.equals("12345678")){
+                if(email.equals("yashmalaviya.mzp@gmail.com") && pass.equals("12345678")){
                     Intent i = new Intent(VolunteerLoginAndSignUp.this, VolunteerDonateOrReceive.class);
                     if(i.resolveActivity(getPackageManager()) != null){
                         startActivity(i);

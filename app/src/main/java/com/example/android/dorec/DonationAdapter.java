@@ -28,10 +28,10 @@ public class DonationAdapter extends ArrayAdapter<Donation> {
         name.setText(currentDonation.getName());
 
         TextView address = (TextView) itemView.findViewById(R.id.addressTV);
-        address.setText(currentDonation.getAddress());
+        address.setText(currentDonation.getLocation());
 
         TextView thing = (TextView) itemView.findViewById(R.id.thingTV);
-        thing.setText(currentDonation.getThing());
+        thing.setText(currentDonation.getType());
 
         TextView quantity = (TextView) itemView.findViewById(R.id.quantityTV);
         quantity.setText(currentDonation.getQuantity());

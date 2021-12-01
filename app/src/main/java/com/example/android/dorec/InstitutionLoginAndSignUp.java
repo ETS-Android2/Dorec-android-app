@@ -33,6 +33,7 @@ public class InstitutionLoginAndSignUp extends AppCompatActivity {
         setContentView(R.layout.activity_institution_login_and_sign_up);
 
         TextView institutionSignUpNowBtn = (TextView) findViewById(R.id.institutionSignUpNowBtn);
+        TextView institutionLoginNowBtn = (TextView) findViewById(R.id.institutionLoginNowBtn);
         EditText institutionContactNumberInputID = (EditText) findViewById(R.id.institutionContactNumberInputID);
         ProgressBar institutionSignUpProgressBar = (ProgressBar) findViewById(R.id.institutionSignUpProgressBar);
 
@@ -55,6 +56,25 @@ public class InstitutionLoginAndSignUp extends AppCompatActivity {
             }
         });
 
+        institutionLoginNowBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText institutionEmailID = (EditText) findViewById(R.id.institutionEmailInputID);
+                EditText institutionPassID = (EditText) findViewById(R.id.institutionPassInputID);
+                String institutionemail = institutionEmailID.getText().toString();
+                String institutionpass = institutionPassID.getText().toString();
+                if(institutionemail.equals("demomail@gmail.com") && institutionpass.equals("123456789")){
+                    Intent i = new Intent(InstitutionLoginAndSignUp.this, DonatePage.class);
+                    if(i.resolveActivity(getPackageManager()) != null){
+                        startActivity(i);
+                    }
+                }
+                else{
+                    Toast.makeText(v.getContext(), "Wrong Credentials !", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
         institutionLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +86,7 @@ public class InstitutionLoginAndSignUp extends AppCompatActivity {
                 institutionLoginVG.setVisibility(View.VISIBLE);
             }
         });
+
 
         institutionSignUpNowBtn.setOnClickListener(new View.OnClickListener() {
             @Override
