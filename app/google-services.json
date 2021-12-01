@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "311405440128",
+    "project_id": "dorec-fe96c",
+    "storage_bucket": "dorec-fe96c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311405440128:android:59ee07eb8dad6db39aca65",
+        "android_client_info": {
+          "package_name": "com.example.android.dorec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311405440128-ntcu1j4lcsjbdj270fd92r5fpa7ak9nd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa-oNiwfcVJpwGXlZnnYpBDKKEep20LY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311405440128-ntcu1j4lcsjbdj270fd92r5fpa7ak9nd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
